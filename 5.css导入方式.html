@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.css导入方式</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        p {
+            color:blue;
+            font-size: large;
+        }
+        h2{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.内部样式表（html的head里的style模块） -->
+    <p>这是一个使用1.内部样式表文本段落</p>
+    <h2>二级标题：使用1.内部样式表</h2>
+    <!-- 2.内联样式（标签中的style属性值） -->
+     <h1 style="color: red;">一级标题：使用2.内联样式</h1>
+    <!-- 3.外部样式表（单独css文件，然后在html的head标签中使用link标签把css链接到html中） -->
+    <h3>3.外部样式表</h3>
+</body>
+</html>

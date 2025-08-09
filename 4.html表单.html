@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.html表单</title>
+</head>
+
+<body>
+    <!-- 这里action填写url,下面的submit提交表单form中的所有数据到对应的url-API接口,#表示不跳转占个位置而已 -->
+    <form action="#">
+        <!-- 用span标签代替label也可，label是只能用于input标签 -->
+        <!-- <span>账户：</span> -->
+         <label for="username">账户：</label>
+        <input type="text" id="username" placeholder="请输入用户名">
+        <br>
+        <label for="passwd">密码：</label>
+        <input type="password" id="passwd" placeholder="请输入密码">
+        <br>
+
+        <!-- 单选框 -->
+         <!-- for属性用于将其绑定到input中的id元素，你点击对应的label就可以跳转到对应的input输入框 -->
+         <label for="">性别</label>
+        <!-- 这里加个name属性表示归类，如果不加那么三个单选框分别表示三类，那么都可以选中；归类后只能选择该类的一项 -->
+         <input type="radio" name="gender"> 男
+         <input type="radio" name="gender"> 女
+         <input type="radio" name="gender"> 其他
+
+         <!-- 多选框 -->
+         <br>
+         <label for="">爱好：</label>
+         <input type="checkbox" name="hobby" id=""> 唱
+         <input type="checkbox" name="hobby" id=""> 跳
+         <input type="checkbox" name="hobby" id=""> rap
+         <input type="checkbox" name="hobby" id=""> 篮球
+
+         <br>
+        <input type="submit",value="上传">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+        /* 1元素选择器：直接写标签名即可 */
+        h2{
+            color: aqua;
+        }
+        h3{
+            color: green;
+        }
+        /* 2类选择器 */
+        .liuxinjie{
+            background-color: blanchedalmond;
+        }
+        /* 3id选择器 */
+        #liuxinjie2{
+            color: red;
+        }
+        /* 4通用选择器，给所有元素添加样式 */
+        *{
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        /* 5子元素选择器：选择位于这个父元素内部的子元素 */
+        /* 父元素和子元素：类比文件夹和文件的关系 */
+        /* 只包含儿子，不包含孙子 */
+        .father>p{
+            color: yellowgreen;
+        }
+        /* 6后代选择器，包含儿子和孙子 */
+        .father p{
+            color: brown;
+        }
+        /* 7.兄弟选择器：相邻元素选择器,紧跟h3之后的一个p标签有效 */
+        h3+p{
+            background-color: cyan;
+        }
+        /* 8.伪类选择器，选择html文档元素的特定状态或者位置。比如鼠标悬停元素上，会出现特定的状态 */
+        #liuxinjie4:hover{
+            background-color: blueviolet;
+        }
+        /* 9.伪元素选择器 
+        ::after选中元素之后插入虚拟内容
+        ：：before选择元素之前插入虚拟内容 */
+
+    </style>
+</head>
+<body>
+    <h1>不同类型的css选择器</h1>
+    <h2>元素选择器示例</h2>
+    <h3 class="liuxinjie">类选择器：与普通区分，通过类特殊化样式</h3>
+    <h3>普通h3标题，应用普遍样式</h3>
+    <h4 id="liuxinjie2">四级标题，应用id选择器</h4>
+    <div class="father">
+        <p class="son">这是一个子元素选择器示例</p>
+        <div>
+            <p class="grandson">这是一个后代选择器示例</p>
+        </div>
+    </div>
+    <p>这是一个普通的段落</p>
+    <h3>这是一个相邻兄弟选择器示例</h3>
+    <p>这是另一个普通段落</p>
+
+    <h3 id="liuxinjie4">这是一个伪类选择器示例</h3>
+</body>
+</html>
